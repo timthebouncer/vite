@@ -1,0 +1,116 @@
+.wrapper{
+    width: 100%;
+    background: black;
+    height: 150px;
+
+}
+.header-wrapper{
+    //@media (max-width:1600px){
+    //    width: 90%;
+    //
+    //}
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-direction: column;
+
+    .header-upper{
+        height: 74px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title-wrapper{
+            .title{
+                color:yellow;
+                font-size: 25px;
+            }
+        }
+        .header-btn-wrapper{
+            display: flex;
+            p{
+                font-size: 10px;
+                color:yellowgreen;
+            }
+        }
+    }
+    .divider{
+        height: 1px;
+        width: 100%;
+        background-color: white;
+    }
+    .header-lower{
+        height: 74px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-wrapper{
+            display: flex;
+            flex: 1;
+            .nav-items{
+                display: flex;
+                flex:0.8;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                padding-left:0;
+                li{
+                    list-style: none;
+                    color: white;
+                    position: relative;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    a:hover{
+                        color: #1c9750;
+                        font-weight: bold;
+                    }
+                    .nav-sub-items{
+                        visibility: hidden;
+                        width: 200px;
+                        position: absolute;
+                        top:20px;
+                        left:0;
+                        right: 50px;
+                        padding-left:0;
+
+                        .nav-details{
+                            list-style: none;
+                            border-bottom: 1px solid #3e3e3e;
+                            padding: 10px 0 10px 5px;
+                            text-align: left;
+                        }
+                    }
+                }
+                li:hover .nav-sub-items{
+                    visibility: visible;
+                    width: 200px;
+                    background-color: black;
+                    position: absolute;
+                    top:50px;
+                    left:-30px;
+                }
+            }
+        }
+        .vertical-divider{
+            height: 74px;
+            width: 0.5px;
+            background-color: white;
+        }
+        .booking-btn{
+            margin-left: 30px;
+        }
+    }
+}
+
+
+@media (min-width:600px) {
+   p{
+       font-size: 20px;
+   }
+}
+@media (max-width: 599px) {
+    p{
+        font-size: 10px;
+    }
+}
